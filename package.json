@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prepare": "husky install",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
@@ -14,7 +15,7 @@
   "lint-staged": {
     "src/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "prettier . --write"
+      "prettier --write"
     ]
   },
   "dependencies": {
