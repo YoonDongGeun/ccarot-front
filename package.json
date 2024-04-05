@@ -13,7 +13,7 @@
     "format": "prettier --cache --write ."
   },
   "lint-staged": {
-    "src/*.{js,jsx,ts,tsx}": [
+    "src/**/*.{js,jsx,ts,tsx}": [
       "eslint --fix",
       "prettier --write"
     ]
